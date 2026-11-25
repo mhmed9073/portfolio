@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-label="Orbit">
+  <defs>
+    <linearGradient id="violet" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9170f5"/>
+      <stop offset="1" stop-color="#6a4bdc"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="#101116"/>
+  <g transform="translate(400 170) scale(2)">
+    <rect x="0" y="0" width="200" height="200" rx="56" fill="url(#violet)"/>
+    <path d="M100 38 Q108 92 162 100 Q108 108 100 162 Q92 108 38 100 Q92 92 100 38 Z" fill="#ffffff"/>
+  </g>
+  <text x="600" y="720" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="140" font-weight="700" letter-spacing="-3" fill="#ffffff">Orbit</text>
+</svg>

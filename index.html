@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>mhmed9073 — Développeur full stack</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="who"><div><b>mhmed9073</b><span>Développeur full stack</span></div></div>
+  <nav class="pill" aria-label="Navigation">
+    <button data-v="info">Domaines</button>
+    <button data-v="skills">Skills</button>
+    <button data-v="projets">Projets</button>
+    <button data-v="contact">Contact</button>
+  </nav>
+  <div class="ext"><a href="https://github.com/mhmed9073" rel="noopener">GitHub ↗</a></div>
+</header>
+
+<main>
+  <section id="work">
+    <div class="hero">
+      <div class="window">
+        <div class="bar"><i></i><i></i><i></i><em>+</em></div>
+        <div class="screen">
+          <h1>Je développe des logiciels, des jeux &amp; des <em>systèmes.</em></h1>
+          <p class="sub">Développeur full stack. <span>De la personnalisation de bureaux Linux à l’électronique connectée, en passant par le développement de jeux sur Roblox.</span></p>
+        </div>
+      </div>
+    </div>
+    <a class="down" href="#info" aria-label="Voir les domaines">↓</a>
+  </section>
+
+  <section id="info" class="about">
+    <h2>Mes domaines</h2>
+    <p class="lead">Je transforme mes idées en projets qui marchent, dans cinq domaines.</p>
+    <div class="agrid">
+      <div class="acard"><div class="aico" style="color:#22b8cf"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6l-6 6 6 6M16 6l6 6-6 6"/></svg></div><h3>Développement web</h3><p>Développeur full stack : sites et applications web, comme ce portfolio et ma plateforme de chat.</p></div>
+      <div class="acard"><div class="aico" style="color:#f08c3a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 17l6-6-6-6M12 19h8"/></svg></div><h3>Systèmes Linux</h3><p>Un bureau et un dock façon macOS en Rust et GTK4, pensés pour Wayland.</p></div>
+      <div class="acard"><div class="aico" style="color:#e64980"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l9 5v10l-9 5-9-5V7zM3 7l9 5 9-5M12 12v10"/></svg></div><h3>Jeux Roblox</h3><p>Création et scripting de jeux en Luau, comme mon jeu de minage avec détecteur de métaux.</p></div>
+      <div class="acard"><div class="aico" style="color:#20c997"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></svg></div><h3>Électronique connectée</h3><p>Cartes Arduino, capteurs et automatisation, comme ma mini-serre qui arrose toute seule.</p></div>
+      <div class="acard"><div class="aico" style="color:#9775fa"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></div><h3>Applications Android</h3><p>Applications mobiles pour mon usage perso, comme mon lecteur de musique.</p></div>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <p class="lead">Langages et technologies que j’utilise.</p>
+    <div class="stack">
+      <div class="tile"><div class="ico" style="background:#b7410e">Rs</div>Rust</div>
+      <div class="tile"><div class="ico rbx"></div>Roblox / Luau</div>
+      <div class="tile"><div class="ico" style="background:#00599c">C++</div>C++ / Arduino</div>
+      <div class="tile"><div class="ico" style="background:#f7df1e;color:#1a1a1a">JS</div>JavaScript</div>
+      <div class="tile"><div class="ico" style="background:#e44d26">H5</div>HTML</div>
+      <div class="tile"><div class="ico" style="background:#2965f1">C3</div>CSS</div>
+      <div class="tile"><div class="ico" style="background:linear-gradient(135deg,#3776ab 50%,#ffd43b 50%);color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.5)">Py</div>Python</div>
+    </div>
+  </section>
+
+  <section>
+    <div class="projects" id="projets">
+      <h2>Projets</h2>
+      <div class="filters" role="group" aria-label="Catégories">
+        <button data-k="all" aria-pressed="true">Tous</button>
+        <button data-k="systemes" aria-pressed="false">Systèmes</button>
+        <button data-k="web" aria-pressed="false">Web &amp; mobile</button>
+        <button data-k="jeux" aria-pressed="false">Jeux</button>
+        <button data-k="electronique" aria-pressed="false">Électronique</button>
+      </div>
+      <div class="list">
+      <a class="row" data-p="astra" data-cat="systemes" href="#"><h3>AstraOS</h3><p>Un bureau et un dock façon macOS pour Linux, avec une barre de menu et un dock traduits de MacOSDock.</p><div class="tags"><span>Rust</span><span>GTK4</span><span>Wayfire</span></div></a>
+      <a class="row" data-p="chat" data-cat="web" href="#"><img class="shot" src="orbit.svg" alt="Orbit, logo de la plateforme de chat" width="1200" height="900"><h3>Plateforme de chat</h3><p>Une application de discussion en ligne avec communautés, salons et messages en temps réel.</p><div class="tags"><span>Web</span><span>Temps réel</span></div></a>
+      <a class="row" data-p="roblox" data-cat="jeux" href="#"><h3>Jeu de minage Roblox</h3><p>Un détecteur de métaux pour miner sur Terre puis dans l’espace, avec zones, boutique, sac et Game Pass.</p><div class="tags"><span>Roblox Studio</span><span>Luau</span></div></a>
+      <a class="row" data-p="music" data-cat="web" href="#"><h3>Lecteur de musique</h3><p>Une appli Android inspirée d’Amerigo, capable de télécharger une playlist entière.</p><div class="tags"><span>Android</span><span>Mobile</span></div></a>
+      <a class="row" data-p="serre" data-cat="electronique" href="#"><h3>Mini-serre connectée</h3><p>Une serre qui mesure la température, l’humidité de l’air et du sol, et arrose toute seule.</p><div class="tags"><span>Arduino Uno R4</span><span>Proteus</span></div></a>
+      </div>
+    </div>
+  </section>
+
+
+<section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p class="lead">Écris-moi sur l’une de ces plateformes.</p>
+    <div class="cards">
+      <div class="card"><div class="cico"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.2 0 24 5.2 18.8 24 0 18.8zM9.77 8.06 15.94 9.77 14.23 15.94 8.06 14.23z"/></svg></div><h3>Roblox</h3><p>moyt_23</p><button class="btn copy" data-copy="moyt_23" type="button">Copier le pseudo</button></div>
+      <div class="card"><div class="cico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.317 4.37a19.79 19.79 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.74 19.74 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 00-.041-.106 13.1 13.1 0 01-1.872-.892.077.077 0 01-.008-.128c.126-.094.252-.192.372-.292a.074.074 0 01.078-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.079.009c.12.1.246.199.373.293a.077.077 0 01-.006.127 12.3 12.3 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.84 19.84 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg></div><h3>Discord</h3><p>mhmed9073</p><button class="btn copy" data-copy="mhmed9073" type="button">Copier le pseudo</button></div>
+      <div class="card"><div class="cico"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></div><h3>GitHub</h3><p>mhmed9073</p><a class="btn" href="https://github.com/mhmed9073" rel="noopener">Voir le profil</a></div>
+    </div>
+  </section>
+</main>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mt"><div class="mbox"><button class="mclose" id="mclose" type="button" aria-label="Fermer">×</button><h3 id="mt"></h3><p class="md" id="md"></p><ul id="ml"></ul><div class="tags" id="mtags"></div></div></div>
+
+<div class="lang" id="lang" role="group" aria-label="Langue / Language"><button type="button" data-l="fr" aria-pressed="true">FR</button><button type="button" data-l="en" aria-pressed="false">EN</button></div>
+
+<script src="script.js"></script>
+</body>
+</html>
